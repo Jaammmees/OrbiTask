@@ -1,0 +1,1 @@
+A project to work on my Frontend and Backend skills atm.
