@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* This makes the App fill the entire viewport height */
+  width: 100vw; /* This makes the App fill the entire viewport width */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Adjust padding as needed, or remove it if unnecessary */
+  background: linear-gradient(to top right, #d2f2ff, #f0ffc8);
 }
 
 .App-logo {

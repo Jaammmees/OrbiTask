@@ -1,0 +1,40 @@
+.weekView {
+    display: flex;
+    width: 80vw; /* 80% of the viewport width */
+    height: 80vh; /* 80% of the viewport height */
+    margin: auto; /* Center in the viewport */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Blur effect for the frosted glass look */
+    border-radius: 75px; /* Optional: adds rounded corners */
+    padding: 2vw;
+  }
+  
+  .time-column {
+    flex: 0 0 5%; /* Assign a fixed percentage of the .weekView's width to the time column */
+    background-color: #f0f0f0; /* Example background color for visibility */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure it fills the parent container's height */
+  }
+  
+  .hour-slot {
+    flex-grow: 1; /* Allow each slot to expand or shrink dynamically */
+    display: flex;
+    align-items: center; /* Center slot content vertically */
+    justify-content: center; /* Center slot content horizontally */
+    border-bottom: 1px solid #ddd; /* Optional: adds a separator between slots */
+  }
+  
+  .daysContainer {
+    display: flex;
+    flex: 1; /* Take up the remaining space */
+    overflow-x: auto; /* Enable horizontal scrolling for the days if they overflow */
+  }
+  
+  .day {
+    flex-grow: 1; /* Distribute remaining space evenly among days */
+    display: flex;
+    flex-direction: column;
+    min-width: 120px; /* Ensure each day column has a minimum width for readability */
+  }
+  

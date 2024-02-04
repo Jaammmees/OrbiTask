@@ -1,0 +1,17 @@
+.day {
+
+    background-color: lightgray;
+    width: 20%;
+    min-height: 700px;
+    height: 100%;
+    border-color: whitesmoke;
+    border-style: solid;
+    box-sizing: border-box;
+}
+  
+.hour-slot {
+border-top: 1px solid #ccc; /* Light line between hours */
+padding: 10px 0; /* Adjust padding as needed */
+text-align: center; /* Center the text */
+}
+
