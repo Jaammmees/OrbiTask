@@ -8,13 +8,13 @@ const WeekView = () => {
     <div className="weekView">
       <HourComponent startTime="6" endTime="22" />
       <div className="daysContainer">
-        <DayComponent day={'Monday'} events={[]} />
-        <DayComponent day={'Tuesday'} events={[]} />
-        <DayComponent day={'Wednesday'} events={[]} />
-        <DayComponent day={'Thursday'} events={[]} />
-        <DayComponent day={'Friday'} events={[]} />
-        <DayComponent day={'Saturday'} events={[]} />
-        <DayComponent day={'Sunday'} events={[]} />
+        <DayComponent day={'Monday'} events={[]} startTime="6" endTime="22" />
+        <DayComponent day={'Tuesday'} events={[]} startTime="6" endTime="22" />
+        <DayComponent day={'Wednesday'} events={[]} startTime="6" endTime="22" />
+        <DayComponent day={'Thursday'} events={[]} startTime="6" endTime="22" />
+        <DayComponent day={'Friday'} events={[]} startTime="6" endTime="22" />
+        <DayComponent day={'Saturday'} events={[]} startTime="6" endTime="22" />
+        <DayComponent day={'Sunday'} events={[]} startTime="6" endTime="22" />
       </div>
     </div>
   );

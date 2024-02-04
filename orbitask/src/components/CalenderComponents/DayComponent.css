@@ -1,17 +1,15 @@
 .day {
-
-    background-color: lightgray;
-    width: 20%;
-    min-height: 700px;
-    height: 100%;
-    border-color: whitesmoke;
-    border-style: solid;
-    box-sizing: border-box;
-}
+    flex-grow: 1; /* Distribute remaining space evenly among days */
+    display: flex;
+    flex-direction: column;
+    min-width: 120px; /* Ensure each day column has a minimum width for readability */
+  }
   
-.hour-slot {
-border-top: 1px solid #ccc; /* Light line between hours */
-padding: 10px 0; /* Adjust padding as needed */
-text-align: center; /* Center the text */
+.day .date{
+    font-weight: bold;
+    color: #424242;
 }
 
+.day .hour-slot{
+    border-left: 1px solid #ddd; /* Optional: adds a separator between slots */
+}

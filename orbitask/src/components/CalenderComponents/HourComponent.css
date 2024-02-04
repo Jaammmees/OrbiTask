@@ -1,0 +1,25 @@
+.time-column {
+    flex: 0 0 5%; /* Assign a fixed percentage of the .weekView's width to the time column */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure it fills the parent container's height */
+  }
+  
+.hour-slot {
+    flex-grow: 1; /* Allow each slot to expand or shrink dynamically */
+    display: flex;
+    align-items:end; /* Center slot content vertically */
+    justify-content: right; /* Center slot content horizontally */
+    border-bottom: 1px solid #ddd; /* Optional: adds a separator between slots */
+}
+
+.time-column .hour-slot{
+    padding-right: 20px;
+    color: #686868;
+}
+
+.time-column .date {
+    text-align: right;
+    padding-right: 20px;
+    color: #686868;
+}

@@ -28,6 +28,7 @@ const HourComponent = ({startTime, endTime }) => {
 
   return (
       <div className="time-column">
+        <div className="date"> Hours </div>
         {timeSlots.map((time, index) => (
           <div key={index} className="hour-slot">
             {time}
